@@ -55,6 +55,9 @@ Naming/RescuedExceptionsVariableName:
 Naming/FileName:
   Enabled: false
 
+Gemspec/RequireMFA:
+  Enabled: false
+
 ################ Enable cops #############################
 Style/CollectionMethods:
   Enabled: true
