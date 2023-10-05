@@ -19,7 +19,7 @@ gem 'maglevcms-shrine'
 Generate migration, run migrations and add a new initializer to configure the gem:
 
 ```
-bundle exec rails g maglev:shrine:instal
+bundle exec rails g maglev:shrine:install
 ```
 
 ## Usage
