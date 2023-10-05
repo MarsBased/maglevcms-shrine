@@ -7,6 +7,7 @@ Gem::Specification.new do |spec|
   spec.version = Maglev::Shrine::VERSION
   spec.authors = ['MarsBased']
   spec.email = ['dev@marsbased.com']
+  spec.licenses = ['MIT']
 
   spec.summary = 'Integrates Maglev CMS with Shrine.'
   spec.description = 'Changes assets management in Maglev CMS to use Shrine.'
