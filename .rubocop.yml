@@ -1,0 +1,124 @@
+################ General configuration ###################
+AllCops:
+  NewCops: enable
+  TargetRubyVersion: 2.7
+  DisplayStyleGuide: true
+  Exclude:
+    - "bin/**/*"
+
+################ Disable cops ############################
+Style/Documentation:
+  Enabled: false
+
+Layout/MultilineOperationIndentation:
+  Enabled: false
+
+Layout/ClosingParenthesisIndentation:
+  Enabled: false
+
+Layout/BeginEndAlignment:
+  Enabled: false
+
+Style/CommandLiteral:
+  Enabled: false
+
+Style/FormatString:
+  Enabled: false
+
+Style/SpecialGlobalVars:
+  Enabled: false
+
+Style/Lambda:
+  Enabled: false
+
+Style/DoubleNegation:
+  Enabled: false
+
+Style/MultilineBlockChain:
+  Enabled: false
+
+Style/ClassAndModuleChildren:
+  Enabled: false
+
+Lint/AmbiguousBlockAssociation:
+  Enabled: false
+
+Naming/PredicateName:
+  Enabled: false
+
+Naming/AccessorMethodName:
+  Enabled: false
+
+Naming/RescuedExceptionsVariableName:
+  Enabled: false
+
+Naming/FileName:
+  Enabled: false
+
+################ Enable cops #############################
+Style/CollectionMethods:
+  Enabled: true
+
+Style/Send:
+  Enabled: true
+
+################ Customize cops ##########################
+Style/AndOr:
+  EnforcedStyle: conditionals
+
+Style/RedundantReturn:
+  AllowMultipleReturnValues: true
+
+Style/RegexpLiteral:
+  EnforcedStyle: mixed
+
+Style/SignalException:
+  EnforcedStyle: semantic
+
+Style/PercentLiteralDelimiters:
+  PreferredDelimiters:
+    "%": "()"
+    "%i": "[]"
+    "%q": "()"
+    "%Q": "()"
+    "%r": "{}"
+    "%s": "()"
+    "%w": "[]"
+    "%W": "[]"
+    "%x": "()"
+
+Layout/EmptyLinesAroundClassBody:
+  EnforcedStyle: empty_lines
+
+Layout/LineLength:
+  Max: 90
+  Exclude:
+    - spec/**/*
+    - "db/migrate/**/*"
+
+Metrics/AbcSize:
+  Max: 22
+  Exclude:
+    - "db/migrate/**/*"
+
+Metrics/MethodLength:
+  Max: 12
+  Exclude:
+    - "lib/tasks/**/*"
+
+Metrics/ClassLength:
+  Max: 400
+
+Metrics/ModuleLength:
+  Max: 150
+
+Naming/VariableNumber:
+  EnforcedStyle: "snake_case"
+
+Metrics/BlockLength:
+  Exclude:
+    - "lib/tasks/**/*"
+
+Style/MixinUsage:
+  Exclude:
+    - spec/**/*
